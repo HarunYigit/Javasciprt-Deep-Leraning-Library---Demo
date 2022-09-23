@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="yapay_Zeka.js"></script>
+    <script>
+        let model =new Cok_cikisli_perceptron([2,16,5,2],0.6);
+        let xler=[]
+        let yler=[]
+        for(let i =0 ; i< 100;i++){
+            xler.push([i/100]);
+            if(i< 50){
+                yler.push(0);
+            }else{
+                yler.push(1);
+            }
+        }
+       // model.fit(xler,yler)
+      // console.log(model.disa_aktar())
+      //  console.log(model.ice_aktar(model.disa_aktar()))
+    </script>
+</body>
+</html>
